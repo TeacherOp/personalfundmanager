@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Personal Fund Manager{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="{% if values_hidden %}values-hidden{% endif %}">
+    <header>
+        <div class="header-content">
+            <h1>Personal Fund Manager</h1>
+            <div class="header-actions">
+                <button id="toggleValues" class="btn btn-secondary" title="Toggle value visibility">
+                    <span class="show-icon">Show Values</span>
+                    <span class="hide-icon">Hide Values</span>
+                </button>
+                <button id="syncBtn" class="btn btn-primary">
+                    Sync from Groww
+                </button>
+                {% if last_sync %}
+                <span class="last-sync">Last sync: {{ last_sync[:16].replace('T', ' ') }}</span>
+                {% endif %}
+            </div>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <div id="modal-overlay" class="modal-overlay hidden">
+        <div id="modal" class="modal">
+            <div class="modal-header">
+                <h3 id="modal-title">Modal</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div id="modal-content" class="modal-content"></div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

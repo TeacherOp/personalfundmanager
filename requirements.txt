@@ -1,0 +1,4 @@
+flask
+growwapi
+pyotp
+python-dotenv
