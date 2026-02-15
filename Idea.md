@@ -26,5 +26,3 @@ I can approve it will purchase th estocks on those weights to ensure the bucket
 Then every day atleast once ( to start with ) i will run the agent to keep track, if the bucket of stocks needs changfes reduce some by seeling and adding some more quantity of another stock, -> 
 
 Goal short term -> beat FD returns by atleast 50% over 6 monhts
-
-Long term toh dekhenge bhai, random experiment hai itna bhi plan nai kia.
