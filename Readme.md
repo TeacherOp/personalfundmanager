@@ -2,6 +2,10 @@
 
 A DIY "mutual fund" experiment - building a personal portfolio manager powered by AI agents.
 
+## Disclaimer
+
+This is a personal experiment, not financial advice. Stock market investments are subject to market risks. The AI suggestions (when implemented) are for educational purposes - always do your own research before making investment decisions.
+
 ## The Idea
 
 Mutual funds are essentially buckets of stocks with different weightages, managed by a fund manager. What if you could build your own "fund" - managed and suggested by AI agents, using your own investment philosophy?
@@ -99,10 +103,6 @@ personalfundmanager/
 │   └── groww_service.py   # Groww API wrapper
 └── CLAUDE.md              # AI assistant context
 ```
-
-## Disclaimer
-
-This is a personal experiment, not financial advice. Stock market investments are subject to market risks. The AI suggestions (when implemented) are for educational purposes - always do your own research before making investment decisions.
 
 ## License
 

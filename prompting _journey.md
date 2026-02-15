@@ -13,12 +13,12 @@
                                                                         
   Things to consider:                                                   
                                                                         
-  1. Transaction costs - Daily rebalancing could eat into returns through brokerage fees, STT, GST, etc. You might want the agent to factor in a threshold before suggesting trades.
-  2. Tax implications - Short-term capital gains (< 1 year holding) are taxed at 15%. Frequent churning increases this burden.
-  3. 50% over FD in 6 months - That's roughly 10-11% absolute return in 6 months (assuming FD ~7%). Achievable in a bull market, but equity is volatile. Set expectations accordingly.
+ver FD in 6 months - That's roughly 10-11% absolute return in 6 months (assuming FD ~7%). Achievable in a bull market, but equity is volatile. Set expectations accordingly.
   4. Agent hallucination risk - When parsing news/data, LLMs can misinterpret or fabricate. Critical to validate the data sources it pulls from.
                                                                         
-  My take: It's a solid weekend project with real learning potential. The architecture (agent suggests -> human approves -> API executes) is sensible. Just be prepared for the possibility that it underperforms - that's still valuable data.
+  My take: It's  1. Transaction costs - Daily rebalancing could eat into returns through brokerage fees, STT, GST, etc. You might want the agent to factor in a threshold before suggesting trades.
+  2. Tax implications - Short-term capital gains (< 1 year holding) are taxed at 15%. Frequent churning increases this burden.
+  3. 50% o a solid weekend project with real learning potential. The architecture (agent suggests -> human approves -> API executes) is sensible. Just be prepared for the possibility that it underperforms - that's still valuable data.
                                                                         
   Want to start sketching out the technical architecture?               
 
